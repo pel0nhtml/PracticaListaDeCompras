@@ -1,4 +1,5 @@
-/* Reseteo de márgenes y padding, y configuración de box-sizing */
+
+/*Reseteo*/
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +14,6 @@ body {
     padding: 0;
 }
 
-/* Estilo del encabezado (header) */
 header {
     width: 100%;
     padding: 20px;
@@ -24,65 +24,66 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo del logo dentro del encabezado */
+/*estilo del logo*/
 header .logo img {
     max-width: 150px;
     height: auto;
 }
 
-/* Contenedor principal de las imágenes */
+/*contenedor principal de las imágenes*/
 #imgContainer {
-    display: flex; /* Coloca los divs de imágenes en una fila */
-    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    display: flex;
+    height: 100vh;
 }
 
-/* Estilo para los contenedores de cada imagen */
+/*contenedores de imagen */
 #imgContainer div {
-    flex: 1; /* Asegura que ambos divs ocupen el mismo espacio */
+    flex: 1;
     position: relative;
     overflow: hidden;
 }
 
-/* Estilo para los enlaces que contienen las imágenes */
+/*enlaces de las imágenes */
 #imgContainer a {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
-/* Estilo para las imágenes */
+/*estilo para las imágenes*/
 #imgContainer img {
-    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
-    height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
-    object-position: center; /* Centra la imagen en el contenedor */
-    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Transiciones suaves para el hover */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 
-/* Efecto hover para escalar y atenuar la imagen */
+/*efecto hover para agrandar y atenuar la imagen*/
 .hover-effect:hover img {
-    transform: scale(1.1); /* Agranda la imagen ligeramente */
-    opacity: 0.3; /* Reduce la opacidad de la imagen */
+    transform: scale(1.1);
+    opacity: 0.3;
 }
 
-/* Estilo para el texto que aparece al hacer hover */
+/*texto que aparece al hacer hover*/
 .overlay-text {
     position: absolute;
-    top: 50%; /* Coloca el texto en el 50% de la altura */
-    left: 50%; /* Coloca el texto en el 50% del ancho */
-    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto exactamente */
-    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0072BB;
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
-    opacity: 0; /* Inicialmente el texto es invisible */
-    transition: opacity 0.6s ease-in-out; /* Transición suave para hacer aparecer el texto */
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
     font-weight: bold;
-    z-index: 2; /* Asegura que el texto esté sobre la imagen */
+    z-index: 2;
 }
 
-/* Efecto hover para mostrar el texto */
+/*Efecto hover para mostrar el texto*/
 .hover-effect:hover .overlay-text {
-    opacity: 1; /* El texto se hace visible cuando se hace hover sobre la imagen */
+    opacity: 1;
 }

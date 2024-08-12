@@ -3,12 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men Clothing</title>
+    <title>Swell Store Women</title>
     <link rel="stylesheet" href="mensShop.css">
 </head>
 <body>
-    <p>hola puto</p>
-    
-    <script src="mensShopScript.js"></script>
+    <div class="sidebar">
+        <h2><img src="/img/output (1).png" alt="" style="max-width: 100%;"></h2>
+        <nav>
+            <ul>
+                <li><a href="#">Todos los productos</a></li>
+                <!-- Agregar enlaces a otras páginas -->
+            </ul>
+        </nav>
+        <button id="cart-button" class="cart-button">
+            <img src="/img/2.png" alt="Shopping Cart">
+            <span id="cart-count">0</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <h1>Todos los productos</h1>
+        <section class="product-listing">
+            <div class="product">
+                <img src="img/swimsuit.jpg" alt="foto producto">
+                <h3>Long Sleeve Springsuit</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+            <div class="product">
+                <img src="/img/abjw400106_billabong,l_bmm6_frt1.jpg" alt="foto producto">
+                <h3>Long Sleeve Springsuit</h3>
+                <p>$59.99</p>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+            <div class="product">
+                <img src="/img/abjw500101_billabong,l_nny6_frt1.jpg" alt="foto producto">
+                <h3>Short Jane Springsuit</h3>
+                <p>$39.99</p>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+            <div class="product">
+                <img src="/img/abjx100256_billabong,l_crc0_frt1.jpg" alt="foto producto">
+                <h3>Underwire Swimsuit</h3>
+                <p>$69.99</p>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+            <div class="product">
+                <img src="/img/ebjx100108_billabong,l_bpb_frt1.jpg" alt="foto producto">
+                <h3>One Piece Swimsuit</h3>
+                <p>$79.99</p>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+            <div class="product">
+                <img src="/img/ubjx100296_billabong,l_waa_frt1.jpg" alt="foto producto">
+                <h3>One Piece Swimsuit</h3>
+                <p>$89.99</p>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+            <!-- Agregar más productos aquí -->
+        </section>
+    </div>
+
+    <!-- Modal del carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="womenShopScript.js"></script>
 </body>
 </html>

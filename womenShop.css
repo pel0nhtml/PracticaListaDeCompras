@@ -15,14 +15,14 @@ body {
     height: 100vh;
 }
 
-/* Contenedor principal */
+/*Contenedor principal*/
 .main-content {
-    display: flex; /*Alinea el sidebar y el contenedor principal*/
+    display: flex; /*alinea el sidebar y el contenedor principal*/
     width: 100%;
     height: 100%; 
 }
 
-/*sidebar*/
+/*Sidebar*/
 .sidebar {
     background-color: #273134;
     color: white;
@@ -83,7 +83,7 @@ body {
 }
 
 .cart-button img {
-    max-width: 24px; /* Ajustado el tamaño del ícono */
+    max-width: 24px; /*Ajustado el tamaño del ícono*/
     margin-right: 5px; 
 }
 
@@ -101,7 +101,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Contenedor principal */
+/*Contenedor principal*/
 .container {
     background-color: #ffffff;
     flex: 1;
@@ -112,15 +112,61 @@ body {
     overflow-y: auto;
     max-height: 100vh;
 }
+/*Modal del carrito*/
+.cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
 
-/* Título lista de productos */
+.cart-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.cart-modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.cart-modal-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cart-modal-content li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+/*título lista de productos*/
 .container h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #0F4C5C;
 }
 
-/* Estilo para la lista de productos */
+/*estilo para la lista de productos*/
 .product-listing {
     width: 100%;
     display: grid;
@@ -185,7 +231,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsividad */
+/*responsividad*/
 @media (max-width: 768px) {
     .product-listing {
         grid-template-columns: 1fr 1fr;
